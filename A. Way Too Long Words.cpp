@@ -9,10 +9,9 @@ int main() {
 
   for (const char& c : word) {
     nums += 1;
+    last = c;
 
-    if (first != '\0') {
-      last = c;
-    } else {
+    if (first == '\0') {
       first = c;
     }
   }
